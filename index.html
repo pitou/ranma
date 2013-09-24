@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Ranma è magra</title>
+        <script language="javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script language="javascript" src="js/ranmaemagra.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/ranmaemagra.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="box">
+            Original sentence:&nbsp;<input type="text" id="orig_text" />
+            <br /><br />
+            <span id="orig"></span>
+            <br />
+            <span id="orig2"></span>
+            <br /><br />
+            Anagram:&nbsp;<input type="text" id="anag" />
+            <!--&nbsp;<a id="shuffle_anag" href="#"><img src="dado.png" /></a> -->
+            <br /><br />
+        </div>
+        
+        <div class="box_opzioni">
+            <div id="conteggio" class="opzioni">
+                Used letters: <span id="utilizzate">0</span> over <span id="totale">0</span>.
+            </div>
+            <div id="warning" class="opzioni">
+            </div>
+            <div id="opzioni_visualizzazione" class="opzioni">
+                <input type="checkbox" id="separa_vocali" checked="checked" /> <label for="separa_vocali">Separate vowels from consonants</label>.
+            </div>
+            <div id="opzioni_evidenziazione" class="opzioni">
+                <input type="radio" name="evidenzia_nascondi_lettere" id="evidenzia_utilizzate" checked="checked" /> <label for="evidenzia_utilizzate">Highlight</label> or
+                <input type="radio" name="evidenzia_nascondi_lettere" id="nascondi_utilizzate" /> <label for="nascondi_utilizzate">hide already used letters</label>.
+            </div>
+        </div>
+        
+        <div class="box_ranmachan">
+            <img src="images/ranma_chan.png" class="ranma_chan" />
+        </div>
+    </body>
+</html>
