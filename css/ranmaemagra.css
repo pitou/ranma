@@ -78,6 +78,6 @@ body {
 	border:0px;
 }
 
-#orig2{
-/* 	float:right; */
+#orig, #orig2 {
+    font-family:monospace;
 }
